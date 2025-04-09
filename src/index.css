@@ -25,6 +25,14 @@
 @import "tailwindcss";
 
 @theme{
+  /* font */
   --font-outfit: Outfit;
+
+  /* colors */
+  --color-accent: #FCA311;
+  --color-black: #000000;
+  --color-white: #FFFFFF;
+  --color-copy-gray: #E5E5E5;
+  --color-navy-blue: #142130;
 }
 
