@@ -27,6 +27,7 @@
 @theme{
   /* font */
   --font-outfit: Outfit;
+  --font-body: 1rem;
 
   /* colors */
   --color-accent: #FCA311;
@@ -34,5 +35,42 @@
   --color-white: #FFFFFF;
   --color-copy-gray: #E5E5E5;
   --color-navy-blue: #142130;
+
+  /* breakpoints */
+  --breakpoint-xm: 425px;
+
 }
+
+@layer base {
+  
+  body,html{
+    font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body{
+    background: var(--color-navy-blue);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+  }
+    
+    *,
+    *::before,
+     *::after,
+    body{
+        box-sizing: border-box;
+        margin: 0;
+        padding:0;
+    }
+    
+    html{
+        scroll-behavior: smooth;
+    }
+
+    .active{
+      color: var(--color-accent);
+    }
+}
+
+
 

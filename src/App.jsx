@@ -1,8 +1,19 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
+import ProjectsPage from "./pages/ProjectsPage";
+import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return <>
-    <h1 className="font-bold text-accent">To Proceed</h1>
+  <main>
+    <Routes>
+      <Route path="/" element={ <Home /> } />
+      <Route path="/projects" element={ <ProjectsPage /> } />
+      <Route path="*" element={ <NotFoundPage /> } />
+    </Routes>
+  </main>
+    
   </>;
 }
 
