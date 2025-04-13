@@ -1,0 +1,27 @@
+.not-found{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: -5rem;
+}
+
+.not-found-content{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.not-found-msg{
+    color: var(--color-copy-gray);
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
+
+@media (min-width: 40rem) {
+
+    .not-found-msg{
+        font-size: 2rem;
+    }
+}
