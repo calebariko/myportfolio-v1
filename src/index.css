@@ -1,3 +1,5 @@
+/* FONTS */
+
 @font-face {
   font-family: Outfit;
   font-weight: 300;
@@ -22,55 +24,140 @@
   src: url("./src/fonts/Outfit-Bold.ttf");
 }
 
-@import "tailwindcss";
 
-@theme{
+
+:root{
   /* font */
   --font-outfit: Outfit;
   --font-body: 1rem;
+  --font-xm: 0.75rem;
+  --font-sm: 1rem;
+  --font-md: 2rem;
+  --font-lg: 3rem;
+  --font-xl: 4rem;
+  --font-xxl: 4.5rem;
 
   /* colors */
   --color-accent: #FCA311;
+  --color-accent-fade: hsla(37, 98%, 53%, 0.1);
   --color-black: #000000;
   --color-white: #FFFFFF;
-  --color-copy-gray: #E5E5E5;
+  --color-copy-gray: #B7B7B7;
+  --color-copy-grayish: #E5E5E5;
   --color-navy-blue: #142130;
 
   /* breakpoints */
   --breakpoint-xm: 425px;
 
+  /* transition */
+  --animate-trans: all 300ms 75ms ease-in-out;
+
 }
 
-@layer base {
+/* BASE STYLING MINE */
   
-  body,html{
-    font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
-    scroll-behavior: smooth;
-  }
-
-  body{
-    background: var(--color-navy-blue);
-    font-size: var(--fs-body);
-    line-height: 1.6;
-  }
-    
-    *,
-    *::before,
-     *::after,
-    body{
-        box-sizing: border-box;
-        margin: 0;
-        padding:0;
-    }
-    
-    html{
-        scroll-behavior: smooth;
-    }
-
-    .active{
-      color: var(--color-accent);
-    }
+body,html{
+  font-family: var(--font-outfit), Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
 }
 
+body{
+  background: var(--color-navy-blue);
+  font-size: var(--font-body);
+  line-height: 1.6;
+  color: var(--color-white);
+}
+    
+*,
+*::before,
+  *::after,
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding:0;
+}
 
+html{
+    scroll-behavior: smooth;
+}
 
+h1{
+  font-size: var(--font-lg);
+  line-height: 1;
+  color: var(--color-white);
+
+}
+
+h1 span{
+  color: var(--color-accent);
+}
+p{
+  color: var(--color-copy-gray);
+}
+
+img{
+  display: block;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* COMPONENT CLASSES */
+  
+.max-container{
+  max-width: 1440px;
+  margin-inline: auto;
+}
+
+.padding-b{
+  padding-bottom: 0;
+}
+
+/* UTILITY CLASSES */
+
+.rm-underline{
+  text-decoration: none;
+}
+
+.p-sm{
+  padding-inline: 20px;
+}
+.p-md{
+  padding-inline: 50px;
+}
+
+.p-lg{
+  padding-inline: 100px;
+}
+
+.h-center{
+  height: calc(100vh - 138px);
+}
+
+section,
+footer,
+header{
+  padding-inline: 20px;
+}
+
+/* small */
+@media (min-width: 40rem) {
+}
+
+/* medium */
+@media (min-width: 48rem) {
+  section,
+  footer,
+  header{
+    padding-inline: 3.125rem;
+  }
+  
+}
+
+/* large */
+@media (min-width: 64rem) {
+  section,
+  footer{
+    padding-inline: 6.25rem;
+  }
+
+}
