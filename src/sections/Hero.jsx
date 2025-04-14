@@ -1,11 +1,10 @@
 import HeroImage from "../assets/images/hero.svg";
-import Button from "../components/Button";
 import "../assets/css/Hero.css"
 
 function Hero() {
   return (
-    <section className="hero max-container">
-      <div className="hero-content">
+    <section className="hero max-container" id="hero">
+      <div className="hero-content wrapper">
         <div className="hero-text">
           <h1 className="hero-title">
             Hi, I Am <br /> <span>Caleb Ariko.</span>
@@ -14,7 +13,7 @@ function Hero() {
             I am a Frontend web developer. <br />
             Let me help you build fantastic sites for the web
           </p>
-          <Button label="see my work" />
+          <a className="btn" href="#projects">see my work</a>
         </div>
 
         <img
