@@ -74,6 +74,7 @@ textarea,
 select {
 	font-family: inherit;
 	font-size: inherit;
+	background: none;
 }
 
 /* Make sure textareas without a rows attribute are not tiny */
@@ -84,4 +85,9 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
 	scroll-margin-block: 5ex;
+}
+
+a{
+	text-decoration: none;
+	color: inherit;
 }

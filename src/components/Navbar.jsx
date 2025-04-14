@@ -14,7 +14,7 @@ function Navbar() {
         <ul className="primary-nav-list" role="list">
           {navLinks.map((navLink) => (
               <li key={navLink.name}>
-                <NavLink className="nav-link rm-underline" to={navLink.path}>{navLink.name}</NavLink>
+                <NavLink className="nav-link" to={navLink.path}>{navLink.name}</NavLink>
               </li>
           ))}
         </ul>

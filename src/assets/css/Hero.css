@@ -2,8 +2,7 @@
     padding-block: 2rem;
 }
 
-.hero,
-.hero-content{
+.hero{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,11 +27,7 @@
 }
 
 .hero-desc{
-    margin-bottom: 1.5rem;
-}
-
-.hero-img{
-    width: min(25rem, 200vw);
+    margin-bottom: 1.75rem;
 }
 
 /* small */
@@ -42,14 +37,16 @@
     }
     .hero-content{
         margin-top: -1rem;
+        flex-direction: row;
     }
     
     .hero-text{
         text-align: start;
+        /* border: 3px solid; */
     }
-    
     .hero-img{
         width: 22.5rem;
+        /* border: 3px solid; */
     }
 }
 
@@ -70,6 +67,6 @@
 /* extra large */
 @media (min-width: 80rem) {
     .hero-content{
-        gap: 200px;
+        gap: 7.75rem;
     }
 }
