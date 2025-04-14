@@ -1,4 +1,5 @@
 import About from "../sections/About"
+import Footer from "../sections/Footer"
 import Hero from "../sections/Hero"
 import Skills from "../sections/Skills"
 
@@ -8,6 +9,7 @@ function Home () {
         <Hero />
         <About />
         <Skills />
+        <Footer />
     </div>
   )
 }

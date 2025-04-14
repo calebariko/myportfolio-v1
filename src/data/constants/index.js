@@ -61,3 +61,24 @@ export const skills = [
         color: "#181717"
     }
 ]
+
+export const footerLinks = [
+    {
+        id: 1,
+        href: "https://linkedin.com/in/calebariko",
+        icon: "linkedin",
+        color: "#0A66C2"
+    },
+    {
+        id: 1,
+        href: "https://github.com/calebariko",
+        icon: "github",
+        color: "#181717"
+    },
+    {
+        id: 1,
+        href: "https://linkedin.com/in/calebariko",
+        icon: "envelope",
+        color: "#FFFFFF"
+    },
+]
