@@ -1,12 +1,94 @@
-# React + Vite
+# 🌐 CALEB ARIKO – Frontend Developer Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal frontend developer portfolio, first of its kind. This work showcases selected projects, skills and expertise and a pinch of me as I grow and evolve as a frontend web developer to embrace the dynamic world of tech.
 
-Currently, two official plugins are available:
+> ⚡ Built with modern tools like **React**, **Vite**, **CSS3**, **AOS** and **GSAP** for animation.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+##  About Me
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+I'm a frontend web developer passionate about crafting beautiful, responsive, and interactive web experiences. I specialize in building fast and accessible user interfaces using modern technologies like React, Vite, Tailwind, JavaScript, SCSS and more — with a focus on clean code and unforgetful design.
+
+My goal is to deliver intuitive user experiences that feel as good as they look. This portfolio is a reflection of the work I so cherish doing — blending creativity, code, and personality.
+
+I'm always learning, always building, and excited about where the future of greatness.
+
+## 📸 Screenshot
+
+![Landing Page Screenshot](public/screenshot.png)
+
+## 📸 Live Demo
+
+🔗 [Visit live site](https://calebariko.netlify.app)
+
+---
+
+## 🧩 Tech Stack
+
+- ⚛️ React (with Vite)
+- 🎨 CSS3 (for sections, pages, components)
+- 🎞 GSAP (GreenSock Animation Platform)
+- 🌐 Responsive & accessible layout
+- 🧪 Vitest for unit/component testing
+
+---
+
+## 🚀 Features
+
+- Smooth **page transitions** and **scroll-triggered animations**
+- Dark/light mode toggle using color variables
+- Component-based structure
+- Fully **responsive** for desktop, tablet, and mobile
+- **SEO-ready** meta tags and Open Graph support
+- Custom **404 page**
+- Font Awesome icons (self-hosted or via CDN)
+- Smooth animations using AOS and GSAP
+
+---
+
+## 📁 Folder Structure
+
+root/ 
+    ── public/
+    ── src/
+        ── assets/
+            ── css/
+            ── fonts/
+            ── images/
+        ── components/
+        ── data/
+        ── hooks/
+        ── pages/
+        ── sections/
+        ── App.jsx
+        ── App.css
+        ── Main.jsx
+        ── Index.css
+        ── other
+    ── test/
+    index.html 
+    ── package.json 
+    ── vite.config.js 
+    ── README.md
+
+## 📬 Contact Me
+
+You can reach me on:
+
+[🔗 GitHub](https://github.com/calebariko)
+
+[💼 LinkedIn](https://linkedin.com/in/calebariko)
+
+[📧 Email](calebouma202@gmail.com)
+
+## 📝 License
+
+This project is open source and available under the MIT License.
+
+## 🙌 Acknowledgements
+- GSAP
+- Font Awesome
+- React
+- Vite
+- Vitest

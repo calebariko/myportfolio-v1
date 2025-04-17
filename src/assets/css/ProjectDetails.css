@@ -1,0 +1,94 @@
+.title {
+  margin-block: 1.5rem 2rem;
+}
+
+.interact-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 4px;
+  margin-block: 1rem 3rem;
+}
+
+.interact-btns .btn {
+  border: 1px solid transparent;
+  padding: 8px 24px;
+  font-size: 14px;
+}
+
+@media (hover: hover) {
+  .interact-btns .btn:hover {
+    transform: rotate(0);
+    transform: scale(1.07);
+    background: transparent;
+    border-color: var(--color-white);
+  }
+}
+
+.interact-btn i {
+  font-size: 12px;
+}
+
+.details-title {
+  text-transform: capitalize;
+  margin-block: 1rem 0.5rem;
+  position: relative;
+}
+
+.details-title::after {
+  content: "";
+  margin-top: 3px;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 40%;
+  height: 1px;
+  background: var(--color-white);
+}
+
+.roles-role,
+.tech {
+  color: var(--color-copy-gray);
+}
+
+.accent-box {
+  width: 400px;
+  height: 32px;
+  background: var(--color-accent-fade);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-inline: auto;
+}
+
+.prevProject,
+.nextProject {
+  text-transform: capitalize;
+  letter-spacing: 1px;
+  cursor: pointer;
+  color: var(--color-copy-gray);
+}
+
+.prevProject:hover,
+.nextProject:hover {
+  color: var(--color-accent);
+}
+
+@media (min-width: 40rem) {
+  .title {
+    margin-block: 2rem 2.5rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .accent-box {
+    width: 100%;
+  }
+
+  .interact-btns .btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}

@@ -1,6 +1,9 @@
 .footer-header{
-    margin-top: 4rem;
-    margin-bottom: 2.5rem;
+    margin-block: 4rem 3rem;
+}
+
+.links-container{
+    margin-bottom: 2rem;
 }
 
 .footer-links{
@@ -8,23 +11,23 @@
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 2rem;
 }
 
-.footer-link:hover i{
-    transform: translateY(-0.25rem);
-    color: var(--color-white);
+@media (hover: hover) {
+    .footer-link:hover i{
+        transform: translateY(-0.25rem);
+        color: var(--color-white);
+    }
 }
 
 .footer-link i{
     font-size: 1.5rem;
-    transition: var(--animate-trans);
     color: var(--color-copy-gray);
+    transition: var(--animate-trans);
 }
 
 .copyright{
     text-align: center;
     margin-bottom: .5rem;
     text-transform: capitalize;
-
 }

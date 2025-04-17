@@ -3,6 +3,8 @@
 *::before,
 *::after {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 /* Prevent font size inflation */
@@ -12,77 +14,43 @@ html {
 	text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-	margin-block-end: 0;
-}
+/* Remove list styles on ul element */
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-
-ul[role="list"],
-ol[role="list"] {
+ul[role="list"]{
 	list-style: none;
 }
 
 
 
-/* Set core body defaults */
+/* body defaults */
 body {
 	min-height: 100vh;
-	line-height: 1.5;
+	line-height: 1.4;
 }
 
-/* Set shorter line heights on headings and interactive elements */
+/* line heights on headings and interactive elements */
 h1,
 h2,
 h3,
-h4,
-button,
-input,
-label {
+button{
 	line-height: 1.1;
 }
 
-/* Balance text wrapping on headings */
+/* text wrapping on headings */
 h1,
 h2,
-h3,
-h4 {
+h3 {
 	text-wrap: balance;
 }
 
-/* Make images easier to work with */
-img,
-picture {
-	max-width: 100%;
-	display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
+/* Inherit fonts buttons */
+button{
 	font-family: inherit;
 	font-size: inherit;
 	background: none;
 }
 
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-	min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
+/* extra scroll margin anything that has been anchored to */
 :target {
 	scroll-margin-block: 5ex;
 }

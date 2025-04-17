@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section className="hero max-container" id="hero">
       <div className="hero-content wrapper">
-        <div className="hero-text">
+        <div className="hero-text align-center">
           <h1 className="hero-title">
             Hi, I Am <br /> <span>Caleb Ariko.</span>
           </h1>

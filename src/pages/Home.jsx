@@ -1,17 +1,22 @@
-import About from "../sections/About"
-import Footer from "../sections/Footer"
-import Hero from "../sections/Hero"
-import Skills from "../sections/Skills"
+import About from "../sections/About";
+import Hero from "../sections/Hero";
+import Projects from "../sections/Projects";
+import Skills from "../sections/Skills";
+import useDocTitle from "../hooks/useDocTitle";
+export const animation = "zoom-in";
+export const animationtwo = "zoom-in-up";
 
-function Home () {
+function Home() {
+  useDocTitle("Caleb Ariko | Home");
+
   return (
-    <div>
-        <Hero />
-        <About />
-        <Skills />
-        <Footer />
-    </div>
-  )
+    <>
+      <Hero />
+      <About />
+      <Skills />
+      <Projects />
+    </>
+  );
 }
 
-export default Home
+export default Home;

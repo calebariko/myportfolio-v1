@@ -1,13 +1,33 @@
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/images/navLogo.svg";
 import { navLinks } from "../data/constants";
+import { useState, useEffect } from "react";
 import "../assets/css/Nav.css";
 
 function Navbar() {
 
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolledHeight = window.scrollY;
+      if (scrolledHeight > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <header className="max-container">
-      <nav className="primary-nav">
+    <header className={`${isSticky ? 'sticky' : ''}`}>
+      <nav className="max-container primary-nav">
         <NavLink to="/">
           <img className="logo" src={Logo} alt="Logo" width={80} />
         </NavLink>

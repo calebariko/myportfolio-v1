@@ -1,0 +1,23 @@
+.theme-btn{
+    position: fixed;
+    z-index: 888;
+    bottom: .5rem;
+    right: .75rem;
+    border: 0;
+    background: black;
+    padding: .325rem;
+    font-size: 1.25rem;
+    border-radius: .75rem;
+    cursor: pointer;
+  }
+  
+  @media (min-width: 48rem) {
+    .theme-btn {
+      right: .25rem;
+    }
+  }
+  @media (min-width: 64rem) {
+    .theme-btn {
+      right: 5.25rem;
+    }
+  }

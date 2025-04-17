@@ -1,12 +1,11 @@
 .btn{
   display: inline-block;
-  border: 2px solid var(--color-white);
-  /* border-radius: 40px; */
-  /* background: var(--color-accent); */
-  /* background: none; */
-  color: inherit;
-  /* box-shadow: 2px 2px 12px 3px rgba(255, 255, 255, 0.15); */
-  padding: 12px 20px;
+  border: 0;
+  border-radius: 2.5rem;
+  background: var(--color-accent);
+  box-shadow: 0 0 12px 8px rgba(0, 0, 0, 0.2);
+  color: var(--color-white);
+  padding: 0.5rem 1.25rem;
   font-weight: bold;
   text-transform: capitalize;
   letter-spacing: 1px;
@@ -14,8 +13,18 @@
   cursor: pointer;
 
 }
-.btn:hover{
-  transform: rotate(-3deg);
-  color: var(--color-accent);
-  border-color: var(--color-accent);
+
+@media (hover: hover) {
+
+  .btn:hover{
+    transform: rotate(-4deg);
+    box-shadow: 0 0 100px 4px rgba(255, 255, 255, 0.2);
+    border-color: var(--color-accent);
+  }
+}
+
+@media (min-width: 40rem) {
+  .btn{
+    padding: 0.75rem 1.5rem;
+  }
 }
