@@ -5,7 +5,7 @@ import NotFoundPage from "./components/NotFoundPage";
 import Navbar from "./components/Navbar";
 import Footer from "./sections/Footer";
 import Animation from "./aos";
-import Theme from "./components/Theme";
+import Theme from "./components/theme";
 import { Suspense, lazy } from "react";
 import Loader from "./components/Loader";
 
