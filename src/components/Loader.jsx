@@ -8,13 +8,18 @@ function Loader () {
     useEffect(() => {
       const loader = loaderRef.current;
   
-      gsap.fromTo(
-        loader,
-        { opacity: 0 },
-        { opacity: 1, duration: 0.5, ease: "power2.out" }
-      );
+      const showTimeout = setTimeout(() => {
+        
+        gsap.fromTo(
+          loader,
+          { opacity: 0 },
+          { opacity: 1, duration: 0.5, ease: "power2.out" }
+        );
+      }, 300);
   
       return () => {
+        clearTimeout(showTimeout)
+
         gsap.to(loader, {
           opacity: 0,
           duration: 0.3,

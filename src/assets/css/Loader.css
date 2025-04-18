@@ -1,7 +1,7 @@
 .loader-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   position: fixed;
   inset: 0;
@@ -14,10 +14,8 @@
 .loader-spinner {
   width: 2rem;
   height: 2rem;
-  border: .25rem solid var(--color-white);
-  border-top: .25rem solid transparent;
+  border: 0.25rem solid var(--color-white);
+  border-top: 0.25rem solid transparent;
   border-radius: 50%;
   animation: spin 0.8s linear infinite;
 }
-
-

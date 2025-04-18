@@ -3,25 +3,29 @@
 @font-face {
   font-family: Outfit;
   font-weight: 300;
-  src: url("./src/assets/fonts/Outfit-Light.ttf");
+  src: url("/src/assets/fonts/Outfit-Light.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Outfit;
   font-weight: 400;
-  src: url("./src/assets/fonts/Outfit-Regular.ttf");
+  src: url("/src/assets/fonts/Outfit-Regular.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Outfit;
   font-weight: 500;
-  src: url("./src/assets/fonts/Outfit-Medium.ttf");
+  src: url("/src/assets/fonts/Outfit-Medium.woff2") format("woff2");
+  font-display: swap;
 }
 
 @font-face {
   font-family: Outfit;
   font-weight: 700;
-  src: url("./src/assets/fonts/Outfit-Bold.ttf");
+  src: url("/src/assets/fonts/Outfit-Bold.woff2") format("woff2");
+  font-display: swap;
 }
 
 :root {
@@ -44,6 +48,8 @@
   --color-copy-gray: hsl(0, 0%, 72%);
   --color-copy-grayish: hsl(0, 0%, 90%);
   --color-navy-blue: hsl(212, 41%, 13%);
+  
+  --color-theme-toggle: hsl(214, 9%, 85%);
   --color-blur: hsla(212, 44%, 8%, 0.5);
 
   /* breakpoints */
@@ -59,10 +65,9 @@
   --color-black: hsl(0, 0%, 100%);
   --color-white: hsl(0, 0%, 10%);
   --color-copy-gray: hsl(0, 0%, 42%);
-  --color-copy-gray1: hsl(0, 0%, 60%);
   --color-copy-grayish: hsl(0, 0%, 30%);
   --color-navy-blue: hsl(214, 9%, 85%);
-  --color-navy-blue1: hsl(212, 41%, 95%);
+  --color-theme-toggle: hsl(212, 41%, 13%);
   --color-blur: hsla(212, 44%, 85%, 0.5);
 }
 
@@ -119,7 +124,7 @@ img {
   }
 }
 
-/* UTILITY CLASSES */
+/* UTILITIES */
 
 .section-header {
   text-align: center;

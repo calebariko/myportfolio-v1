@@ -20,6 +20,7 @@ function Hero() {
           className="hero-img"
           src={HeroImage}
           alt="illustration of a person on computer building a website"
+          loading="lazy"
         />
       </div>
     </section>

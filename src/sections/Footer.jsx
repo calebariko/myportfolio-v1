@@ -10,7 +10,7 @@ function Footer() {
         <ul className="footer-links" role="list">
           {footerLinks.map((footerLink) => (
             <li key={footerLink.id} className="footer-link">
-              <a href={footerLink.href} target="_blank">
+              <a href={footerLink.href} target={footerLink.href.startsWith("mailto:") ? undefined : "_blank"} aria-label="social-link">
                 {footerLink.icon === "envelope" ? (
                   <i className={`fas fa-${footerLink.icon}`}></i>
                 ) : (

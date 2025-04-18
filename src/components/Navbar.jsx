@@ -33,7 +33,7 @@ function Navbar() {
         </NavLink>
         <ul className="primary-nav-list" role="list">
           {navLinks.map((navLink) => (
-              <li key={navLink.name}>
+              <li key={navLink.name} aria-label={navLink.name === "Home" ? "Home navigation link" : "Projects navigation link"}>
                 <NavLink className="nav-link" to={navLink.path}>{navLink.name}</NavLink>
               </li>
           ))}

@@ -1,7 +1,8 @@
-import ProjectCard from "../components/ProjectCard";
 import useDocTitle from "../hooks/useDocTitle";
 import useLoadPage from "../hooks/useLoadPage";
 import Loader from "../components/Loader";
+import ProjectCard from "../components/ProjectCard";
+
 
 function ProjectsPage() {
   const loading = useLoadPage();
@@ -14,7 +15,7 @@ function ProjectsPage() {
       <section className="all-projects max-container">
         <h2 className="all-projects-header section-header">all projects</h2>
 
-        <ProjectCard />
+          <ProjectCard />
       </section>
     </>
   );

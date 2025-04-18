@@ -20,7 +20,9 @@
   row-gap: 1.5rem;
 }
 .project-img {
-  aspect-ratio: 1;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
   border-radius: 1rem;
   transition: var(--animate-trans);
 }

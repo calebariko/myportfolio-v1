@@ -77,7 +77,7 @@ export const footerLinks = [
     },
     {
         id: 3,
-        href: "https://linkedin.com/in/calebariko",
+        href: "mailto:calebouma202@gmail.com",
         icon: "envelope",
         color: "#FFFFFF"
     },

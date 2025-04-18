@@ -71,7 +71,6 @@ header.sticky .primary-nav{
 }
 
 /* large */
-
 @media(min-width: 60rem) {
     header{
         padding-block: 1.5rem;

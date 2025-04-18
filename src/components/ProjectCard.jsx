@@ -13,6 +13,7 @@ function ProjectCard() {
               src={project.img}
               alt={project.title}
               className="project-img"
+              loading="lazy"
             />
             <p className="project-name">{project.title}</p>
           </Link>

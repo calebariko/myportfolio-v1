@@ -22,6 +22,7 @@ function SectionProjectCard() {
                 src={sectionProject.img}
                 alt={sectionProject.title}
                 className="project-img"
+                loading="lazy"
               />
               <p className="project-name">{sectionProject.title}</p>
             </Link>

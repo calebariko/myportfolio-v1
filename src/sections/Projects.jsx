@@ -1,5 +1,5 @@
-import "../assets/css/Projects.css"
 import Button from "../components/Button"
+import "../assets/css/Projects.css"
 import SectionProjectCard from "../components/SectionProjectCard"
 
 function Projects () {

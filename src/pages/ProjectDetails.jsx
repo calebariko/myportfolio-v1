@@ -25,10 +25,25 @@ const ProjectDetails = () => {
           <img src={img} alt={title} />
 
           <div className="interact-btns">
-            <a className="btn interact-btn" href={url} target="_blank">
+            <a
+              className={`btn interact-btn ${!url ? "disabled" : ""}`}
+              href={url ? url : "#"}
+              target={url ? "_blank" : "_self"}
+              aria-label="view live site"
+              onClick={e => {
+                if(!url) {
+                  e.preventDefault()
+                }
+              }}
+            >
               view live <i className="fas fa-link"></i>
             </a>
-            <a className="btn interact-btn" href={gurl} target="_blank">
+            <a
+              className="btn interact-btn"
+              href={gurl}
+              target="_blank"
+              aria-label="view source code at github"
+            >
               github repo <i className="fab fa-github"></i>
             </a>
           </div>

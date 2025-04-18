@@ -24,6 +24,7 @@ function About() {
           className="about-img"
           src={AboutImage}
           alt="illustration of a person on computer building a website"
+          loading="lazy"
         />
       </article>
     </section>
