@@ -4,11 +4,8 @@ import "../assets/css/ProjectDetails.css";
 import ProjectNav from "../components/ProjectNav";
 import useDocTitle from "../hooks/useDocTitle";
 
-import useLoadPage from "../hooks/useLoadPage";
-import Loader from "../components/Loader";
 
 const ProjectDetails = () => {
-  const loading = useLoadPage();
   useDocTitle("Caleb Ariko | Project Details");
 
   let titleParam = useParams().title;
@@ -18,7 +15,6 @@ const ProjectDetails = () => {
 
   return (
     <>
-      {loading && <Loader />}
       <section className="project-details max-container">
         <div className="details">
           <h2 className="title section-header">{title}</h2>
